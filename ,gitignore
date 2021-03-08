@@ -1,3 +1,4 @@
-node_modules
+node_modules/
+koa-rest/node_modules
 .idea/
 *.xml
