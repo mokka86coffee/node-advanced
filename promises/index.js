@@ -11,3 +11,8 @@ const readFileIntoArray = (filename = __filename, cb) => new Promise((res, rej) 
 })
 
 readFileIntoArray().then(console.log);
+
+setTimeout(() => console.log(1), 0);
+Promise.resolve(2).then(r => r).then(console.log)
+process.nextTick(() => console.log(3));
+console.log(4)
