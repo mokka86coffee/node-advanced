@@ -12,6 +12,6 @@ const w = fs.createWriteStream(__dirname + '/file.txt.gz');
 r
     .pipe(c)
     .pipe(z)
-        .on('data', () => process.stdout.write('\n.'))
+        .on('data', () => process.stdout.write('.'))
     .pipe(w)
         .on('finish', () => process.stdout.write('\ndone\n'));
